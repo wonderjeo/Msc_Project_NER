@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2019-05-20 Mon 13:42 -->
+<!-- 2019-05-20 Mon 14:21 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>nerLSTM.org</title>
@@ -257,45 +257,69 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org69c7020">1. Literature Review</a>
+<li><a href="#org8b9d4fb">1. Schedule</a>
 <ul>
-<li><a href="#orge26c3d9">1.1. Neural Architectures for NER(Guillaume)</a>
-<ul>
-<li><a href="#org02ba639">1.1.1. Model</a></li>
-<li><a href="#orge9cde8a">1.1.2. LSTM</a></li>
-<li><a href="#org9c36803">1.1.3. CRF</a></li>
-<li><a href="#org7e19ff1">1.1.4. Parameterization and Training</a></li>
-<li><a href="#orge165b94">1.1.5. Tagging Schemes</a></li>
-<li><a href="#org44659f6">1.1.6. Input Word Embeddings</a></li>
+<li><a href="#orgc026f6b">1.1. <span class="todo TODO">TODO</span> Literature Review(baidu)</a></li>
+<li><a href="#orgf5694a8">1.2. <span class="todo TODO">TODO</span> WebPage</a></li>
+<li><a href="#orgf8f535c">1.3. <span class="todo TODO">TODO</span> Standford CoreNLP test accuracy</a></li>
+<li><a href="#org076054e">1.4. <span class="todo TODO">TODO</span> Labeling</a></li>
+<li><a href="#orgbc3f105">1.5. <span class="todo TODO">TODO</span> Revise the existing model(bi-LSTM+CRF)</a></li>
+<li><a href="#orgc311d98">1.6. <span class="done DONE">DONE</span> Small labeling(200~)</a></li>
 </ul>
 </li>
+<li><a href="#org36c2d81">2. Literature Review</a>
+<ul>
+<li><a href="#org997d07e">2.1. Neural Architectures for NER(Guillaume)</a>
+<ul>
+<li><a href="#org6cdd1d6">2.1.1. Model</a></li>
+<li><a href="#orgeffa517">2.1.2. LSTM</a></li>
+<li><a href="#orgebb5a22">2.1.3. CRF</a></li>
+<li><a href="#org72a5247">2.1.4. Parameterization and Training</a></li>
+<li><a href="#org2a40431">2.1.5. Tagging Schemes</a></li>
+<li><a href="#org02a63f9">2.1.6. Input Word Embeddings</a></li>
 </ul>
 </li>
-<li><a href="#org5e5470e">2. Schedule</a>
-<ul>
-<li><a href="#orgf16b563">2.1. <span class="todo TODO">TODO</span> Literature Review(baidu)</a></li>
-<li><a href="#org753760c">2.2. <span class="todo TODO">TODO</span> WebPage</a></li>
-<li><a href="#org4a18ec4">2.3. <span class="todo TODO">TODO</span> Standford CoreNLP test accuracy</a></li>
-<li><a href="#org64b4aef">2.4. <span class="todo TODO">TODO</span> Labeling</a></li>
-<li><a href="#org00ad914">2.5. <span class="todo TODO">TODO</span> Revise the existing model(bi-LSTM+CRF)</a></li>
-<li><a href="#org803f018">2.6. <span class="done DONE">DONE</span> Small labeling(200~)</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org69c7020" class="outline-2">
-<h2 id="org69c7020"><span class="section-number-2">1</span> Literature Review</h2>
+<div id="outline-container-org8b9d4fb" class="outline-2">
+<h2 id="org8b9d4fb"><span class="section-number-2">1</span> Schedule</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-orge26c3d9" class="outline-3">
-<h3 id="orge26c3d9"><span class="section-number-3">1.1</span> Neural Architectures for NER(Guillaume)</h3>
-<div class="outline-text-3" id="text-1-1">
+<div id="outline-container-orgc026f6b" class="outline-3">
+<h3 id="orgc026f6b"><span class="section-number-3">1.1</span> <span class="todo TODO">TODO</span> Literature Review(baidu)</h3>
 </div>
-<div id="outline-container-org02ba639" class="outline-4">
-<h4 id="org02ba639"><span class="section-number-4">1.1.1</span> Model</h4>
-<div class="outline-text-4" id="text-1-1-1">
+<div id="outline-container-orgf5694a8" class="outline-3">
+<h3 id="orgf5694a8"><span class="section-number-3">1.2</span> <span class="todo TODO">TODO</span> WebPage</h3>
+</div>
+<div id="outline-container-orgf8f535c" class="outline-3">
+<h3 id="orgf8f535c"><span class="section-number-3">1.3</span> <span class="todo TODO">TODO</span> Standford CoreNLP test accuracy</h3>
+</div>
+<div id="outline-container-org076054e" class="outline-3">
+<h3 id="org076054e"><span class="section-number-3">1.4</span> <span class="todo TODO">TODO</span> Labeling</h3>
+</div>
+<div id="outline-container-orgbc3f105" class="outline-3">
+<h3 id="orgbc3f105"><span class="section-number-3">1.5</span> <span class="todo TODO">TODO</span> Revise the existing model(bi-LSTM+CRF)</h3>
+</div>
+<div id="outline-container-orgc311d98" class="outline-3">
+<h3 id="orgc311d98"><span class="section-number-3">1.6</span> <span class="done DONE">DONE</span> Small labeling(200~)</h3>
+</div>
+</div>
+
+<div id="outline-container-org36c2d81" class="outline-2">
+<h2 id="org36c2d81"><span class="section-number-2">2</span> Literature Review</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org997d07e" class="outline-3">
+<h3 id="org997d07e"><span class="section-number-3">2.1</span> Neural Architectures for NER(Guillaume)</h3>
+<div class="outline-text-3" id="text-2-1">
+</div>
+<div id="outline-container-org6cdd1d6" class="outline-4">
+<h4 id="org6cdd1d6"><span class="section-number-4">2.1.1</span> Model</h4>
+<div class="outline-text-4" id="text-2-1-1">
 <ul class="org-ul">
 <li>bidirectional LSTMs and CRF(*better)</li>
 <li>Stack LSTM</li>
@@ -308,9 +332,9 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
-<div id="outline-container-orge9cde8a" class="outline-4">
-<h4 id="orge9cde8a"><span class="section-number-4">1.1.2</span> LSTM</h4>
-<div class="outline-text-4" id="text-1-1-2">
+<div id="outline-container-orgeffa517" class="outline-4">
+<h4 id="orgeffa517"><span class="section-number-4">2.1.2</span> LSTM</h4>
+<div class="outline-text-4" id="text-2-1-2">
 <ul class="org-ul">
 <li>input: a given sentence (\(x_1, x_2, ..., x_n\))</li>
 <li>\(x_n\) is represented as a d-dimensional vector</li>
@@ -321,9 +345,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org9c36803" class="outline-4">
-<h4 id="org9c36803"><span class="section-number-4">1.1.3</span> CRF</h4>
-<div class="outline-text-4" id="text-1-1-3">
+<div id="outline-container-orgebb5a22" class="outline-4">
+<h4 id="orgebb5a22"><span class="section-number-4">2.1.3</span> CRF</h4>
+<div class="outline-text-4" id="text-2-1-3">
 <ul class="org-ul">
 <li>the grammer that characterizes interpretable sequences of tags imposes several hard constraints(e.g., I-PER cannot follow B-LOC) that would be impossible to model with independence assumptions.</li>
 <li>for an input sentence</li>
@@ -358,9 +382,9 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </div>
 </div>
 
-<div id="outline-container-org7e19ff1" class="outline-4">
-<h4 id="org7e19ff1"><span class="section-number-4">1.1.4</span> Parameterization and Training</h4>
-<div class="outline-text-4" id="text-1-1-4">
+<div id="outline-container-org72a5247" class="outline-4">
+<h4 id="org72a5247"><span class="section-number-4">2.1.4</span> Parameterization and Training</h4>
+<div class="outline-text-4" id="text-2-1-4">
 <ul class="org-ul">
 <li>the scores associated with each tagging decision for each token (i.e., the \(P_(i,y)\)'s) are defined to be the dot product between the embedding of a word-in-context computed with a bidirectional LSTM</li>
 <li>the parameters of this model are thus the matrix of bigram compatibility scores \(A\), and the parameters that give rise to the matrix \(P\), namely the parameters of the bidirectional LSTM, the linear feature weights, and the word embeddings.</li>
@@ -371,9 +395,9 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </div>
 </div>
 
-<div id="outline-container-orge165b94" class="outline-4">
-<h4 id="orge165b94"><span class="section-number-4">1.1.5</span> Tagging Schemes</h4>
-<div class="outline-text-4" id="text-1-1-5">
+<div id="outline-container-org2a40431" class="outline-4">
+<h4 id="org2a40431"><span class="section-number-4">2.1.5</span> Tagging Schemes</h4>
+<div class="outline-text-4" id="text-2-1-5">
 <ul class="org-ul">
 <li>the paper use IOBES tagging scheme, because tagging a word as I-label with high-confidence narrows down the choices for the subsequent word to I-label or E-label</li>
 <li>however, there is no siginificant improvement over the IOB tagging scheme</li>
@@ -381,9 +405,9 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </div>
 </div>
 
-<div id="outline-container-org44659f6" class="outline-4">
-<h4 id="org44659f6"><span class="section-number-4">1.1.6</span> Input Word Embeddings</h4>
-<div class="outline-text-4" id="text-1-1-6">
+<div id="outline-container-org02a63f9" class="outline-4">
+<h4 id="org02a63f9"><span class="section-number-4">2.1.6</span> Input Word Embeddings</h4>
+<div class="outline-text-4" id="text-2-1-6">
 <ul class="org-ul">
 <li>the input layers are vector representations of individual words</li>
 <li>Since many languages have orthographic or morphological evidence that something</li>
@@ -392,35 +416,10 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </div>
 </div>
 </div>
-
-
-<div id="outline-container-org5e5470e" class="outline-2">
-<h2 id="org5e5470e"><span class="section-number-2">2</span> Schedule</h2>
-<div class="outline-text-2" id="text-2">
-</div>
-<div id="outline-container-orgf16b563" class="outline-3">
-<h3 id="orgf16b563"><span class="section-number-3">2.1</span> <span class="todo TODO">TODO</span> Literature Review(baidu)</h3>
-</div>
-<div id="outline-container-org753760c" class="outline-3">
-<h3 id="org753760c"><span class="section-number-3">2.2</span> <span class="todo TODO">TODO</span> WebPage</h3>
-</div>
-<div id="outline-container-org4a18ec4" class="outline-3">
-<h3 id="org4a18ec4"><span class="section-number-3">2.3</span> <span class="todo TODO">TODO</span> Standford CoreNLP test accuracy</h3>
-</div>
-<div id="outline-container-org64b4aef" class="outline-3">
-<h3 id="org64b4aef"><span class="section-number-3">2.4</span> <span class="todo TODO">TODO</span> Labeling</h3>
-</div>
-<div id="outline-container-org00ad914" class="outline-3">
-<h3 id="org00ad914"><span class="section-number-3">2.5</span> <span class="todo TODO">TODO</span> Revise the existing model(bi-LSTM+CRF)</h3>
-</div>
-<div id="outline-container-org803f018" class="outline-3">
-<h3 id="org803f018"><span class="section-number-3">2.6</span> <span class="done DONE">DONE</span> Small labeling(200~)</h3>
-</div>
-</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Wang Dezhao</p>
-<p class="date">Created: 2019-05-20 Mon 13:42</p>
+<p class="date">Created: 2019-05-20 Mon 14:21</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
