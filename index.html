@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2019-05-21 Tue 23:29 -->
+<!-- 2019-05-22 Wed 20:25 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Named Entity and Rare Word Recognition</title>
@@ -257,86 +257,86 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgbab952d">1. Tasks</a>
+<li><a href="#orgf7a9a6c">1. Tasks</a>
 <ul>
-<li><a href="#orgd280879">1.1. <span class="done DONE">DONE</span> Small labeling(200~)</a></li>
-<li><a href="#org3e4d8e7">1.2. <span class="done DONE">DONE</span> Literature Review</a></li>
-<li><a href="#org625c9fc">1.3. <span class="done DONE">DONE</span> WebPage</a></li>
-<li><a href="#org9d217fb">1.4. <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF, dataset:CoNLL2003)</a>
+<li><a href="#orgaeabddc">1.1. <span class="done DONE">DONE</span> Small labeling(200~)</a></li>
+<li><a href="#orgd370a44">1.2. <span class="done DONE">DONE</span> Literature Review</a></li>
+<li><a href="#org7522aa7">1.3. <span class="done DONE">DONE</span> WebPage</a></li>
+<li><a href="#org2f53408">1.4. <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF, dataset:CoNLL2003)</a>
 <ul>
-<li><a href="#org21f6567">1.4.1. Each tag</a></li>
+<li><a href="#orgd723bed">1.4.1. Each tag</a></li>
 </ul>
 </li>
-<li><a href="#org8df4511">1.5. <span class="done DONE">DONE</span> Word Embedding(reference code)</a></li>
-<li><a href="#org3a8600f">1.6. <span class="todo TODO">TODO</span> LSTM(reference code)</a></li>
-<li><a href="#orgf349a8c">1.7. <span class="todo TODO">TODO</span> CRF(reference code)</a></li>
-<li><a href="#org8ab1125">1.8. <span class="todo TODO">TODO</span> Labeling</a>
+<li><a href="#orgf69aea2">1.5. <span class="done DONE">DONE</span> Word Embedding(reference code)</a></li>
+<li><a href="#orgede7d1e">1.6. <span class="done DONE">DONE</span> LSTM(reference code)</a></li>
+<li><a href="#org9d67575">1.7. <span class="done DONE">DONE</span> CRF(reference code)</a></li>
+<li><a href="#org8ca751b">1.8. <span class="todo TODO">TODO</span> Labeling</a>
 <ul>
-<li><a href="#orga1c3480">1.8.1. Tagging Shemes</a></li>
+<li><a href="#orgca62d47">1.8.1. Tagging Shemes</a></li>
 </ul>
 </li>
-<li><a href="#org724a818">1.9. <span class="todo TODO">TODO</span> Revise the existing model(bi-LSTM+CRF)</a></li>
-<li><a href="#orge469189">1.10. <span class="todo TODO">TODO</span> Model Evaluation</a></li>
-<li><a href="#org088a6a2">1.11. <span class="todo TODO">TODO</span> Rare word recognition</a></li>
-<li><a href="#org8437d25">1.12. <span class="todo TODO">TODO</span> Presentation Type?</a></li>
+<li><a href="#org107772e">1.9. <span class="todo TODO">TODO</span> Revise the existing model(bi-LSTM+CRF)</a></li>
+<li><a href="#org2b20b34">1.10. <span class="todo TODO">TODO</span> Model Evaluation</a></li>
+<li><a href="#orgeedb93d">1.11. <span class="todo TODO">TODO</span> Rare word recognition</a></li>
+<li><a href="#org1f7c6c9">1.12. <span class="todo TODO">TODO</span> Presentation Type?</a></li>
 </ul>
 </li>
-<li><a href="#org90d22cb">2. Literature Review</a>
+<li><a href="#orge2da00f">2. Literature Review</a>
 <ul>
-<li><a href="#orgae4be5e">2.1. Neural Architectures for NER(Guillaume)</a>
+<li><a href="#org0f3ce19">2.1. Neural Architectures for NER(Guillaume)</a>
 <ul>
-<li><a href="#orgcd26537">2.1.1. Model</a></li>
-<li><a href="#orge660839">2.1.2. LSTM</a></li>
-<li><a href="#orgdbe4863">2.1.3. CRF</a></li>
-<li><a href="#org8c8b736">2.1.4. Parameterization and Training</a></li>
-<li><a href="#org9940226">2.1.5. Tagging Schemes</a></li>
-<li><a href="#org6d70135">2.1.6. Input Word Embeddings</a></li>
-<li><a href="#org97a5523">2.1.7. Experiments</a></li>
+<li><a href="#org2bf083e">2.1.1. Model</a></li>
+<li><a href="#orga4241ed">2.1.2. LSTM</a></li>
+<li><a href="#org2eeb604">2.1.3. CRF</a></li>
+<li><a href="#orgdad8fb4">2.1.4. Parameterization and Training</a></li>
+<li><a href="#org67e3858">2.1.5. Tagging Schemes</a></li>
+<li><a href="#org2be7d65">2.1.6. Input Word Embeddings</a></li>
+<li><a href="#org8d6a5a4">2.1.7. Experiments</a></li>
 </ul>
 </li>
-<li><a href="#org7538b78">2.2. Bidirectional LSTM-CRF Models for Sequence Tagging(Baidu research)</a>
+<li><a href="#org411b254">2.2. Bidirectional LSTM-CRF Models for Sequence Tagging(Baidu research)</a>
 <ul>
-<li><a href="#org8137aa8">2.2.1. Model</a></li>
-<li><a href="#orgde859cc">2.2.2. LSTM</a></li>
-<li><a href="#org1eb677b">2.2.3. Bidirectional LSTM Networks</a></li>
-<li><a href="#orgae73fb3">2.2.4. CRF Networks</a></li>
-<li><a href="#orga620ac4">2.2.5. LSTM-CRF Networks</a></li>
-<li><a href="#org7838448">2.2.6. Training procedure</a></li>
-<li><a href="#orge8cca70">2.2.7. Experiments</a></li>
+<li><a href="#org61798c3">2.2.1. Model</a></li>
+<li><a href="#org9cb1fe5">2.2.2. LSTM</a></li>
+<li><a href="#org2c50575">2.2.3. Bidirectional LSTM Networks</a></li>
+<li><a href="#org23bbcc4">2.2.4. CRF Networks</a></li>
+<li><a href="#org62c9bd7">2.2.5. LSTM-CRF Networks</a></li>
+<li><a href="#org512178d">2.2.6. Training procedure</a></li>
+<li><a href="#org6d7cac7">2.2.7. Experiments</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orge42b6f5">3. Model</a>
+<li><a href="#org1d81354">3. Model</a>
 <ul>
-<li><a href="#org177249b">3.1. Word Embedding</a>
+<li><a href="#org43eb7c2">3.1. Word Embedding</a>
 <ul>
-<li><a href="#orgc0f9a8f">3.1.1. Glove.840B.300D</a></li>
-<li><a href="#orgd766a98">3.1.2. Problem</a></li>
+<li><a href="#orgf3ebde5">3.1.1. Glove.840B.300D</a></li>
+<li><a href="#org74c9c68">3.1.2. Problem</a></li>
 </ul>
 </li>
-<li><a href="#orgdf1760b">3.2. LSTM</a></li>
+<li><a href="#orgcf4beaa">3.2. LSTM</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgbab952d" class="outline-2">
-<h2 id="orgbab952d"><span class="section-number-2">1</span> Tasks</h2>
+<div id="outline-container-orgf7a9a6c" class="outline-2">
+<h2 id="orgf7a9a6c"><span class="section-number-2">1</span> Tasks</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-orgd280879" class="outline-3">
-<h3 id="orgd280879"><span class="section-number-3">1.1</span> <span class="done DONE">DONE</span> Small labeling(200~)</h3>
+<div id="outline-container-orgaeabddc" class="outline-3">
+<h3 id="orgaeabddc"><span class="section-number-3">1.1</span> <span class="done DONE">DONE</span> Small labeling(200~)</h3>
 </div>
-<div id="outline-container-org3e4d8e7" class="outline-3">
-<h3 id="org3e4d8e7"><span class="section-number-3">1.2</span> <span class="done DONE">DONE</span> Literature Review</h3>
+<div id="outline-container-orgd370a44" class="outline-3">
+<h3 id="orgd370a44"><span class="section-number-3">1.2</span> <span class="done DONE">DONE</span> Literature Review</h3>
 </div>
-<div id="outline-container-org625c9fc" class="outline-3">
-<h3 id="org625c9fc"><span class="section-number-3">1.3</span> <span class="done DONE">DONE</span> WebPage</h3>
+<div id="outline-container-org7522aa7" class="outline-3">
+<h3 id="org7522aa7"><span class="section-number-3">1.3</span> <span class="done DONE">DONE</span> WebPage</h3>
 </div>
-<div id="outline-container-org9d217fb" class="outline-3">
-<h3 id="org9d217fb"><span class="section-number-3">1.4</span> <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF, dataset:CoNLL2003)</h3>
+<div id="outline-container-org2f53408" class="outline-3">
+<h3 id="org2f53408"><span class="section-number-3">1.4</span> <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF, dataset:CoNLL2003)</h3>
 <div class="outline-text-3" id="text-1-4">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -384,8 +384,8 @@ for the JavaScript code in this tag.
 </tbody>
 </table>
 </div>
-<div id="outline-container-org21f6567" class="outline-4">
-<h4 id="org21f6567"><span class="section-number-4">1.4.1</span> Each tag</h4>
+<div id="outline-container-orgd723bed" class="outline-4">
+<h4 id="orgd723bed"><span class="section-number-4">1.4.1</span> Each tag</h4>
 <div class="outline-text-4" id="text-1-4-1">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -448,21 +448,39 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org8df4511" class="outline-3">
-<h3 id="org8df4511"><span class="section-number-3">1.5</span> <span class="done DONE">DONE</span> Word Embedding(reference code)</h3>
+<div id="outline-container-orgf69aea2" class="outline-3">
+<h3 id="orgf69aea2"><span class="section-number-3">1.5</span> <span class="done DONE">DONE</span> Word Embedding(<a href="https://github.com/guillaumegenthial/tf_ner/blob/master/models/lstm_crf/main.py">reference code</a>)</h3>
+<div class="outline-text-3" id="text-1-5">
+<ul class="org-ul">
+<li>use the Tensorflow vocabulary lookup table to map token strings to ids</li>
+<li>reload a np.array containing some pre-trained vectors (GloVe) where the row index corresponds to a lexeme id</li>
+<li>perform a lookup in this array to get the embedding of every token</li>
+<li>apply dropout to the dense representation to prevent overfitting</li>
+</ul>
 </div>
-<div id="outline-container-org3a8600f" class="outline-3">
-<h3 id="org3a8600f"><span class="section-number-3">1.6</span> <span class="todo TODO">TODO</span> LSTM(reference code)</h3>
 </div>
-<div id="outline-container-orgf349a8c" class="outline-3">
-<h3 id="orgf349a8c"><span class="section-number-3">1.7</span> <span class="todo TODO">TODO</span> CRF(reference code)</h3>
+<div id="outline-container-orgede7d1e" class="outline-3">
+<h3 id="orgede7d1e"><span class="section-number-3">1.6</span> <span class="done DONE">DONE</span> LSTM(reference code)</h3>
+<div class="outline-text-3" id="text-1-6">
+<ul class="org-ul">
+<li>get the context representation by applying a bi-LSTM on top of the token representation</li>
+</ul>
 </div>
-<div id="outline-container-org8ab1125" class="outline-3">
-<h3 id="org8ab1125"><span class="section-number-3">1.8</span> <span class="todo TODO">TODO</span> Labeling</h3>
+</div>
+<div id="outline-container-org9d67575" class="outline-3">
+<h3 id="org9d67575"><span class="section-number-3">1.7</span> <span class="done DONE">DONE</span> CRF(reference code)</h3>
+<div class="outline-text-3" id="text-1-7">
+<ul class="org-ul">
+<li>decode the sentence using CRF</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org8ca751b" class="outline-3">
+<h3 id="org8ca751b"><span class="section-number-3">1.8</span> <span class="todo TODO">TODO</span> Labeling</h3>
 <div class="outline-text-3" id="text-1-8">
 </div>
-<div id="outline-container-orga1c3480" class="outline-4">
-<h4 id="orga1c3480"><span class="section-number-4">1.8.1</span> Tagging Shemes</h4>
+<div id="outline-container-orgca62d47" class="outline-4">
+<h4 id="orgca62d47"><span class="section-number-4">1.8.1</span> Tagging Shemes</h4>
 <div class="outline-text-4" id="text-1-8-1">
 <ul class="org-ul">
 <li>Tag Types?
@@ -476,27 +494,27 @@ for the JavaScript code in this tag.
 </div>
 </div>
 </div>
-<div id="outline-container-org724a818" class="outline-3">
-<h3 id="org724a818"><span class="section-number-3">1.9</span> <span class="todo TODO">TODO</span> Revise the existing model(bi-LSTM+CRF)</h3>
+<div id="outline-container-org107772e" class="outline-3">
+<h3 id="org107772e"><span class="section-number-3">1.9</span> <span class="todo TODO">TODO</span> Revise the existing model(bi-LSTM+CRF)</h3>
 </div>
-<div id="outline-container-orge469189" class="outline-3">
-<h3 id="orge469189"><span class="section-number-3">1.10</span> <span class="todo TODO">TODO</span> Model Evaluation</h3>
+<div id="outline-container-org2b20b34" class="outline-3">
+<h3 id="org2b20b34"><span class="section-number-3">1.10</span> <span class="todo TODO">TODO</span> Model Evaluation</h3>
 <div class="outline-text-3" id="text-1-10">
 <ul class="org-ul">
-<li>We used to plan to compare the accuracy of Stanford CoreNLP and the accuracy of our model. However, we found that</li>
+<li>We used to plan to compare the accuracy of Stanford CoreNLP and the accuracy of our model. However, we found that Stanford CoreNLP is too complex, and it's better to compare with some simple model(like LSTM+CRF, LSTM, and so on)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org088a6a2" class="outline-3">
-<h3 id="org088a6a2"><span class="section-number-3">1.11</span> <span class="todo TODO">TODO</span> Rare word recognition</h3>
+<div id="outline-container-orgeedb93d" class="outline-3">
+<h3 id="orgeedb93d"><span class="section-number-3">1.11</span> <span class="todo TODO">TODO</span> Rare word recognition</h3>
 <div class="outline-text-3" id="text-1-11">
 <ul class="org-ul">
 <li>By word frequency</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org8437d25" class="outline-3">
-<h3 id="org8437d25"><span class="section-number-3">1.12</span> <span class="todo TODO">TODO</span> Presentation Type?</h3>
+<div id="outline-container-org1f7c6c9" class="outline-3">
+<h3 id="org1f7c6c9"><span class="section-number-3">1.12</span> <span class="todo TODO">TODO</span> Presentation Type?</h3>
 <div class="outline-text-3" id="text-1-12">
 <ul class="org-ul">
 <li>Is it necessary to build a website or application to show the ner result? as this site: <a href="https://github.com/guillaumegenthial/tf_ner">NER site</a></li>
@@ -504,16 +522,16 @@ for the JavaScript code in this tag.
 </div>
 </div>
 </div>
-<div id="outline-container-org90d22cb" class="outline-2">
-<h2 id="org90d22cb"><span class="section-number-2">2</span> Literature Review</h2>
+<div id="outline-container-orge2da00f" class="outline-2">
+<h2 id="orge2da00f"><span class="section-number-2">2</span> Literature Review</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgae4be5e" class="outline-3">
-<h3 id="orgae4be5e"><span class="section-number-3">2.1</span> Neural Architectures for NER(Guillaume)</h3>
+<div id="outline-container-org0f3ce19" class="outline-3">
+<h3 id="org0f3ce19"><span class="section-number-3">2.1</span> Neural Architectures for NER(Guillaume)</h3>
 <div class="outline-text-3" id="text-2-1">
 </div>
-<div id="outline-container-orgcd26537" class="outline-4">
-<h4 id="orgcd26537"><span class="section-number-4">2.1.1</span> Model</h4>
+<div id="outline-container-org2bf083e" class="outline-4">
+<h4 id="org2bf083e"><span class="section-number-4">2.1.1</span> Model</h4>
 <div class="outline-text-4" id="text-2-1-1">
 <ul class="org-ul">
 <li>bidirectional LSTMs and CRF(*better)</li>
@@ -527,8 +545,8 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
-<div id="outline-container-orge660839" class="outline-4">
-<h4 id="orge660839"><span class="section-number-4">2.1.2</span> LSTM</h4>
+<div id="outline-container-orga4241ed" class="outline-4">
+<h4 id="orga4241ed"><span class="section-number-4">2.1.2</span> LSTM</h4>
 <div class="outline-text-4" id="text-2-1-2">
 <ul class="org-ul">
 <li>input: a given sentence (\(x_1, x_2, ..., x_n\))</li>
@@ -540,8 +558,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgdbe4863" class="outline-4">
-<h4 id="orgdbe4863"><span class="section-number-4">2.1.3</span> CRF</h4>
+<div id="outline-container-org2eeb604" class="outline-4">
+<h4 id="org2eeb604"><span class="section-number-4">2.1.3</span> CRF</h4>
 <div class="outline-text-4" id="text-2-1-3">
 <ul class="org-ul">
 <li>the grammer that characterizes interpretable sequences of tags imposes several hard constraints(e.g., I-PER cannot follow B-LOC) that would be impossible to model with independence assumptions.</li>
@@ -577,8 +595,8 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </div>
 </div>
 
-<div id="outline-container-org8c8b736" class="outline-4">
-<h4 id="org8c8b736"><span class="section-number-4">2.1.4</span> Parameterization and Training</h4>
+<div id="outline-container-orgdad8fb4" class="outline-4">
+<h4 id="orgdad8fb4"><span class="section-number-4">2.1.4</span> Parameterization and Training</h4>
 <div class="outline-text-4" id="text-2-1-4">
 <ul class="org-ul">
 <li>the scores associated with each tagging decision for each token (i.e., the \(P_(i,y)\)'s) are defined to be the dot product between the embedding of a word-in-context computed with a bidirectional LSTM</li>
@@ -590,8 +608,8 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </div>
 </div>
 
-<div id="outline-container-org9940226" class="outline-4">
-<h4 id="org9940226"><span class="section-number-4">2.1.5</span> Tagging Schemes</h4>
+<div id="outline-container-org67e3858" class="outline-4">
+<h4 id="org67e3858"><span class="section-number-4">2.1.5</span> Tagging Schemes</h4>
 <div class="outline-text-4" id="text-2-1-5">
 <ul class="org-ul">
 <li>the paper use IOBES tagging scheme, because tagging a word as I-label with high-confidence narrows down the choices for the subsequent word to I-label or E-label</li>
@@ -600,8 +618,8 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </div>
 </div>
 
-<div id="outline-container-org6d70135" class="outline-4">
-<h4 id="org6d70135"><span class="section-number-4">2.1.6</span> Input Word Embeddings</h4>
+<div id="outline-container-org2be7d65" class="outline-4">
+<h4 id="org2be7d65"><span class="section-number-4">2.1.6</span> Input Word Embeddings</h4>
 <div class="outline-text-4" id="text-2-1-6">
 <ul class="org-ul">
 <li>the input layers are vector representations of individual words</li>
@@ -625,19 +643,19 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </ul>
 </div>
 </div>
-<div id="outline-container-org97a5523" class="outline-4">
-<h4 id="org97a5523"><span class="section-number-4">2.1.7</span> Experiments</h4>
+<div id="outline-container-org8d6a5a4" class="outline-4">
+<h4 id="org8d6a5a4"><span class="section-number-4">2.1.7</span> Experiments</h4>
 <div class="outline-text-4" id="text-2-1-7">
 <hr />
 </div>
 </div>
 </div>
-<div id="outline-container-org7538b78" class="outline-3">
-<h3 id="org7538b78"><span class="section-number-3">2.2</span> Bidirectional LSTM-CRF Models for Sequence Tagging(Baidu research)</h3>
+<div id="outline-container-org411b254" class="outline-3">
+<h3 id="org411b254"><span class="section-number-3">2.2</span> Bidirectional LSTM-CRF Models for Sequence Tagging(Baidu research)</h3>
 <div class="outline-text-3" id="text-2-2">
 </div>
-<div id="outline-container-org8137aa8" class="outline-4">
-<h4 id="org8137aa8"><span class="section-number-4">2.2.1</span> Model</h4>
+<div id="outline-container-org61798c3" class="outline-4">
+<h4 id="org61798c3"><span class="section-number-4">2.2.1</span> Model</h4>
 <div class="outline-text-4" id="text-2-2-1">
 <ul class="org-ul">
 <li>LSTM</li>
@@ -647,8 +665,8 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </ul>
 </div>
 </div>
-<div id="outline-container-orgde859cc" class="outline-4">
-<h4 id="orgde859cc"><span class="section-number-4">2.2.2</span> LSTM</h4>
+<div id="outline-container-org9cb1fe5" class="outline-4">
+<h4 id="org9cb1fe5"><span class="section-number-4">2.2.2</span> LSTM</h4>
 <div class="outline-text-4" id="text-2-2-2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -694,8 +712,8 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </div>
 </div>
 
-<div id="outline-container-org1eb677b" class="outline-4">
-<h4 id="org1eb677b"><span class="section-number-4">2.2.3</span> Bidirectional LSTM Networks</h4>
+<div id="outline-container-org2c50575" class="outline-4">
+<h4 id="org2c50575"><span class="section-number-4">2.2.3</span> Bidirectional LSTM Networks</h4>
 <div class="outline-text-4" id="text-2-2-3">
 <ul class="org-ul">
 <li>using a bidirectional LSTM network can effiently make use of past features and future features for specific time frame</li>
@@ -704,8 +722,8 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </div>
 </div>
 
-<div id="outline-container-orgae73fb3" class="outline-4">
-<h4 id="orgae73fb3"><span class="section-number-4">2.2.4</span> CRF Networks</h4>
+<div id="outline-container-org23bbcc4" class="outline-4">
+<h4 id="org23bbcc4"><span class="section-number-4">2.2.4</span> CRF Networks</h4>
 <div class="outline-text-4" id="text-2-2-4">
 <ul class="org-ul">
 <li>there are 2 ways to make use of neighbor tag information in predicting current tags
@@ -718,8 +736,8 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </div>
 </div>
 
-<div id="outline-container-orga620ac4" class="outline-4">
-<h4 id="orga620ac4"><span class="section-number-4">2.2.5</span> LSTM-CRF Networks</h4>
+<div id="outline-container-org62c9bd7" class="outline-4">
+<h4 id="org62c9bd7"><span class="section-number-4">2.2.5</span> LSTM-CRF Networks</h4>
 <div class="outline-text-4" id="text-2-2-5">
 <ul class="org-ul">
 <li>the network can efficiently use past input features via a LSTM layer and sentence level tag information via a CRF layer</li>
@@ -729,8 +747,8 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </div>
 </div>
 
-<div id="outline-container-org7838448" class="outline-4">
-<h4 id="org7838448"><span class="section-number-4">2.2.6</span> Training procedure</h4>
+<div id="outline-container-org512178d" class="outline-4">
+<h4 id="org512178d"><span class="section-number-4">2.2.6</span> Training procedure</h4>
 <div class="outline-text-4" id="text-2-2-6">
 <ul class="org-ul">
 <li>in each epoch, divide the whole training data to batches and process one batch at a time</li>
@@ -779,8 +797,8 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </div>
 </div>
 
-<div id="outline-container-orge8cca70" class="outline-4">
-<h4 id="orge8cca70"><span class="section-number-4">2.2.7</span> Experiments</h4>
+<div id="outline-container-org6d7cac7" class="outline-4">
+<h4 id="org6d7cac7"><span class="section-number-4">2.2.7</span> Experiments</h4>
 <div class="outline-text-4" id="text-2-2-7">
 <ul class="org-ul">
 <li>Word embedding
@@ -792,16 +810,16 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </div>
 </div>
 </div>
-<div id="outline-container-orge42b6f5" class="outline-2">
-<h2 id="orge42b6f5"><span class="section-number-2">3</span> Model</h2>
+<div id="outline-container-org1d81354" class="outline-2">
+<h2 id="org1d81354"><span class="section-number-2">3</span> Model</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-org177249b" class="outline-3">
-<h3 id="org177249b"><span class="section-number-3">3.1</span> Word Embedding</h3>
+<div id="outline-container-org43eb7c2" class="outline-3">
+<h3 id="org43eb7c2"><span class="section-number-3">3.1</span> Word Embedding</h3>
 <div class="outline-text-3" id="text-3-1">
 </div>
-<div id="outline-container-orgc0f9a8f" class="outline-4">
-<h4 id="orgc0f9a8f"><span class="section-number-4">3.1.1</span> Glove.840B.300D</h4>
+<div id="outline-container-orgf3ebde5" class="outline-4">
+<h4 id="orgf3ebde5"><span class="section-number-4">3.1.1</span> Glove.840B.300D</h4>
 <div class="outline-text-4" id="text-3-1-1">
 <ul class="org-ul">
 <li><a href="https://nlp.stanford.edu/projects/glove/">GloVe</a> is an unsupervised learning algorithm for obtaining vector representations for words. We extract all words from the training set and assign the GloVe'embedding to each of them, then store the result as glove.npz
@@ -812,8 +830,8 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd766a98" class="outline-4">
-<h4 id="orgd766a98"><span class="section-number-4">3.1.2</span> Problem</h4>
+<div id="outline-container-org74c9c68" class="outline-4">
+<h4 id="org74c9c68"><span class="section-number-4">3.1.2</span> Problem</h4>
 <div class="outline-text-4" id="text-3-1-2">
 <ul class="org-ul">
 <li>initial matrix is zero-matrix now. If the GloVe corpus doesn't contain these words, these words will have a same representation</li>
@@ -822,14 +840,14 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </div>
 </div>
 
-<div id="outline-container-orgdf1760b" class="outline-3">
-<h3 id="orgdf1760b"><span class="section-number-3">3.2</span> LSTM</h3>
+<div id="outline-container-orgcf4beaa" class="outline-3">
+<h3 id="orgcf4beaa"><span class="section-number-3">3.2</span> LSTM</h3>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Wang Dezhao, Liu Wenjing, Wei Jian</p>
-<p class="date">Created: 2019-05-21 Tue 23:29</p>
+<p class="date">Created: 2019-05-22 Wed 20:25</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
