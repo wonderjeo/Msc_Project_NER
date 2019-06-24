@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2019-06-16 Sun 13:57 -->
+<!-- 2019-06-24 Mon 13:52 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Named Entity and Rare Word Recognition</title>
@@ -257,136 +257,136 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org654f8dd">1. Tasks</a>
+<li><a href="#org23ff74d">1. Tasks</a>
 <ul>
-<li><a href="#org5dc4d3d">1.1. <span class="done DONE">DONE</span> Small labeling(200~)</a></li>
-<li><a href="#org844149b">1.2. <span class="done DONE">DONE</span> Literature Review<code>[100%]</code><code>[2/2]</code></a>
+<li><a href="#org4eb66db">1.1. <span class="done DONE">DONE</span> Small labeling(200~)</a></li>
+<li><a href="#org91a6a33">1.2. <span class="done DONE">DONE</span> Literature Review<code>[100%]</code><code>[2/2]</code></a>
 <ul>
-<li><a href="#org20cd0b1">1.2.1. <span class="done DONE">DONE</span> Neural Architectures for NER(Guillaume)</a></li>
-<li><a href="#orgb0ee7da">1.2.2. <span class="done DONE">DONE</span> Bidirectional LSTM-CRF Models for Sequence Tagging(Baidu research)</a></li>
+<li><a href="#org22bf0c4">1.2.1. <span class="done DONE">DONE</span> Neural Architectures for NER(Guillaume)</a></li>
+<li><a href="#org2ad3eb5">1.2.2. <span class="done DONE">DONE</span> Bidirectional LSTM-CRF Models for Sequence Tagging(Baidu research)</a></li>
 </ul>
 </li>
-<li><a href="#org7292e42">1.3. <span class="done DONE">DONE</span> WebPage(Link)</a></li>
-<li><a href="#org986473e">1.4. <span class="done DONE">DONE</span> Read reference code<code>[100%]</code><code>[3/3]</code></a>
+<li><a href="#org0f1c78a">1.3. <span class="done DONE">DONE</span> WebPage(Link)</a></li>
+<li><a href="#org3e8f4c3">1.4. <span class="done DONE">DONE</span> Read reference code<code>[100%]</code><code>[3/3]</code></a>
 <ul>
-<li><a href="#org7cb5ed6">1.4.1. <span class="done DONE">DONE</span> Word Embedding(reference code)</a></li>
-<li><a href="#orgd2522f4">1.4.2. <span class="done DONE">DONE</span> lstm(reference code)</a></li>
-<li><a href="#orgebe73f2">1.4.3. <span class="done DONE">DONE</span> crf(reference code)</a></li>
+<li><a href="#org447c887">1.4.1. <span class="done DONE">DONE</span> Word Embedding(reference code)</a></li>
+<li><a href="#org78b3f06">1.4.2. <span class="done DONE">DONE</span> lstm(reference code)</a></li>
+<li><a href="#orgf095514">1.4.3. <span class="done DONE">DONE</span> crf(reference code)</a></li>
 </ul>
 </li>
-<li><a href="#orgb5ee808">1.5. <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF, train dataset:CoNLL2003, test dataset:CoNLL2003)</a>
+<li><a href="#org2695e67">1.5. <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF, train dataset:CoNLL2003, test dataset:CoNLL2003)</a>
 <ul>
-<li><a href="#orgc2eab6d">1.5.1. Overview</a></li>
-<li><a href="#org1656ce9">1.5.2. Each tag</a></li>
+<li><a href="#orgbbc3093">1.5.1. Overview</a></li>
+<li><a href="#org8022b53">1.5.2. Each tag</a></li>
 </ul>
 </li>
-<li><a href="#org3627792">1.6. <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF, train dataset:CoNLL2003, test dataset:Lab-dataset)</a>
+<li><a href="#org55c7b4f">1.6. <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF, train dataset:CoNLL2003, test dataset:Lab-dataset)</a>
 <ul>
-<li><a href="#orgb8742c3">1.6.1. Overview</a></li>
-<li><a href="#orgca5a084">1.6.2. Each tag</a></li>
+<li><a href="#orgbc7f281">1.6.1. Overview</a></li>
+<li><a href="#orga7e3497">1.6.2. Each tag</a></li>
 </ul>
 </li>
-<li><a href="#org33585fa">1.7. <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF-Char-Conv, train dataset:Kaggle dataset, test dataset: Lab-dataset)</a>
+<li><a href="#org0052689">1.7. <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF-Char-Conv, train dataset:Kaggle dataset, test dataset: Lab-dataset)</a>
 <ul>
-<li><a href="#org6f3ad72">1.7.1. Overview</a></li>
-<li><a href="#orge60ce8e">1.7.2. Each tag</a></li>
-<li><a href="#org7e35290">1.7.3. Matrix</a></li>
+<li><a href="#org632e0ac">1.7.1. Overview</a></li>
+<li><a href="#orgbd55529">1.7.2. Each tag</a></li>
+<li><a href="#org52b566a">1.7.3. Matrix</a></li>
 </ul>
 </li>
-<li><a href="#org9a5ab4c">1.8. <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF-Char-Conv, train datatset:CoNLL2003, test dataset:CoNLL2003)</a>
+<li><a href="#org545c297">1.8. <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF-Char-Conv, train datatset:CoNLL2003, test dataset:CoNLL2003)</a>
 <ul>
-<li><a href="#orgf1804bb">1.8.1. Overview</a></li>
-<li><a href="#orgf57a039">1.8.2. Each tag</a></li>
+<li><a href="#org98f61cc">1.8.1. Overview</a></li>
+<li><a href="#org668c49f">1.8.2. Each tag</a></li>
 </ul>
 </li>
-<li><a href="#orgf00c5cc">1.9. <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF-Char-Conv, train dataset:Kaggle dataset, test dataset:Kaggle dataset)</a>
+<li><a href="#org0d9fdb5">1.9. <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF-Char-Conv, train dataset:Kaggle dataset, test dataset:Kaggle dataset)</a>
 <ul>
-<li><a href="#orgd55e0bf">1.9.1. Overview</a></li>
-<li><a href="#org9dfcb74">1.9.2. Each tag</a></li>
+<li><a href="#org450dd56">1.9.1. Overview</a></li>
+<li><a href="#org4dea0db">1.9.2. Each tag</a></li>
 </ul>
 </li>
-<li><a href="#orgdae926d">1.10. <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF-Char-Conv, train dataset:Lab-dataset(1000), test dataset:Lab-dataset(400))</a>
+<li><a href="#org9de6ef8">1.10. <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF-Char-Conv, train dataset:Lab-dataset(1000), test dataset:Lab-dataset(400))</a>
 <ul>
-<li><a href="#org04a3a87">1.10.1. Overview</a></li>
-<li><a href="#org9972b08">1.10.2. Each tag</a></li>
+<li><a href="#orgd313748">1.10.1. Overview</a></li>
+<li><a href="#orga42daaf">1.10.2. Each tag</a></li>
 </ul>
 </li>
-<li><a href="#org46b0e78">1.11. <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF-Char-Conv, train dataset:Kaggle dataset(10000)+Lab-dataset(1000), test dataset:Lab-dataset(400))</a>
+<li><a href="#org5b92356">1.11. <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF-Char-Conv, train dataset:Kaggle dataset(10000)+Lab-dataset(1000), test dataset:Lab-dataset(400))</a>
 <ul>
-<li><a href="#orgccebe8a">1.11.1. Each tag</a></li>
+<li><a href="#org6039bfb">1.11.1. Each tag</a></li>
 </ul>
 </li>
-<li><a href="#orgee1f701">1.12. <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF-Char-Conv, train dataset:Kaggle dataset(40000)+Lab-dataset(1000), test dataset:Lab-dataset(400))</a>
+<li><a href="#org1f7a6ab">1.12. <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF-Char-Conv, train dataset:Kaggle dataset(40000)+Lab-dataset(1000), test dataset:Lab-dataset(400))</a>
 <ul>
-<li><a href="#org0648cae">1.12.1. Overview</a></li>
-<li><a href="#orgc43b251">1.12.2. Each tag</a></li>
-<li><a href="#org2c27d44">1.12.3. Matrix</a></li>
+<li><a href="#org8eec258">1.12.1. Overview</a></li>
+<li><a href="#org0d015bf">1.12.2. Each tag</a></li>
+<li><a href="#org7e330d3">1.12.3. Matrix</a></li>
 </ul>
 </li>
-<li><a href="#orgac23fd9">1.13. <span class="todo TODO">TODO</span> Labeling<code>[0%]</code><code>[0/3]</code></a>
+<li><a href="#org10d83a1">1.13. <span class="todo TODO">TODO</span> Labeling<code>[0%]</code><code>[0/3]</code></a>
 <ul>
-<li><a href="#orge542387">1.13.1. tagging shemes</a></li>
-<li><a href="#org1fce445">1.13.2. <span class="todo TODO">TODO</span> Wang's part<code>[14%]</code><code>[1/7]</code></a></li>
-<li><a href="#orgda7434b">1.13.3. <span class="todo TODO">TODO</span> Liu's part<code>[14%]</code><code>[1/7]</code></a></li>
-<li><a href="#orgb8b77cd">1.13.4. <span class="todo TODO">TODO</span> Wei's part<code>[0%]</code><code>[0/7]</code></a></li>
+<li><a href="#org390b3ae">1.13.1. tagging shemes</a></li>
+<li><a href="#org593cb29">1.13.2. <span class="todo TODO">TODO</span> Wang's part<code>[14%]</code><code>[1/7]</code></a></li>
+<li><a href="#orge2277bf">1.13.3. <span class="todo TODO">TODO</span> Liu's part<code>[28%]</code><code>[2/7]</code></a></li>
+<li><a href="#org8e42110">1.13.4. <span class="todo TODO">TODO</span> Wei's part<code>[0%]</code><code>[0/7]</code></a></li>
 </ul>
 </li>
-<li><a href="#org7d6412e">1.14. <span class="todo TODO">TODO</span> Revise the existing model(bi-lstm+crf)<code>[0%]</code><code>[0/2]</code></a>
+<li><a href="#org8d21be0">1.14. <span class="todo TODO">TODO</span> Revise the existing model(bi-lstm+crf)<code>[0%]</code><code>[0/2]</code></a>
 <ul>
-<li><a href="#orgadf0cf1">1.14.1. <span class="todo TODO">TODO</span> Word embedding</a></li>
-<li><a href="#org9563375">1.14.2. <span class="todo TODO">TODO</span> Model architecture</a></li>
+<li><a href="#orgff9ddf2">1.14.1. <span class="todo TODO">TODO</span> Word embedding</a></li>
+<li><a href="#org8be378d">1.14.2. <span class="todo TODO">TODO</span> Model architecture</a></li>
 </ul>
 </li>
-<li><a href="#orgca57b42">1.15. <span class="todo TODO">TODO</span> Model evaluation</a></li>
-<li><a href="#org87cfe79">1.16. <span class="todo TODO">TODO</span> Rare word recognition</a></li>
-<li><a href="#orgf0d11b1">1.17. <span class="todo TODO">TODO</span> Presentation type?</a></li>
+<li><a href="#orgc6de409">1.15. <span class="todo TODO">TODO</span> Model evaluation</a></li>
+<li><a href="#orgf658f4c">1.16. <span class="todo TODO">TODO</span> Rare word recognition</a></li>
+<li><a href="#orgf1fcd73">1.17. <span class="todo TODO">TODO</span> Presentation type?</a></li>
 </ul>
 </li>
-<li><a href="#org1689312">2. Literature Review</a>
+<li><a href="#org45af994">2. Literature Review</a>
 <ul>
-<li><a href="#org85f2bc2">2.1. Neural Architectures for NER(Guillaume)</a>
+<li><a href="#orgf190196">2.1. Neural Architectures for NER(Guillaume)</a>
 <ul>
-<li><a href="#orgbc88f9c">2.1.1. Model</a></li>
-<li><a href="#org1368a6b">2.1.2. LSTM</a></li>
-<li><a href="#orgc68a5d9">2.1.3. CRF</a></li>
-<li><a href="#org5ac905a">2.1.4. Parameterization and Training</a></li>
-<li><a href="#org06ad891">2.1.5. Tagging Schemes</a></li>
-<li><a href="#orgc5fcff4">2.1.6. Input Word Embeddings</a></li>
-<li><a href="#orgc51ba21">2.1.7. Experiments</a></li>
+<li><a href="#orga0f480d">2.1.1. Model</a></li>
+<li><a href="#org7063284">2.1.2. LSTM</a></li>
+<li><a href="#orgf0dc5d5">2.1.3. CRF</a></li>
+<li><a href="#org47979a5">2.1.4. Parameterization and Training</a></li>
+<li><a href="#org4e25c11">2.1.5. Tagging Schemes</a></li>
+<li><a href="#orgb6e253f">2.1.6. Input Word Embeddings</a></li>
+<li><a href="#orgffc3e55">2.1.7. Experiments</a></li>
 </ul>
 </li>
-<li><a href="#org13fd964">2.2. Bidirectional LSTM-CRF Models for Sequence Tagging(Baidu research)</a>
+<li><a href="#org316b260">2.2. Bidirectional LSTM-CRF Models for Sequence Tagging(Baidu research)</a>
 <ul>
-<li><a href="#org8323438">2.2.1. Model</a></li>
-<li><a href="#org6fb1a51">2.2.2. LSTM</a></li>
-<li><a href="#org39a228d">2.2.3. Bidirectional LSTM Networks</a></li>
-<li><a href="#org34b36e0">2.2.4. CRF Networks</a></li>
-<li><a href="#org2bd24fb">2.2.5. LSTM-CRF Networks</a></li>
-<li><a href="#orgef65c47">2.2.6. Training procedure</a></li>
-<li><a href="#orgeb5235b">2.2.7. Experiments</a></li>
+<li><a href="#org2f3b69a">2.2.1. Model</a></li>
+<li><a href="#orgd82205d">2.2.2. LSTM</a></li>
+<li><a href="#orgbfa2e70">2.2.3. Bidirectional LSTM Networks</a></li>
+<li><a href="#orgec38783">2.2.4. CRF Networks</a></li>
+<li><a href="#orgd4b95d7">2.2.5. LSTM-CRF Networks</a></li>
+<li><a href="#org423e676">2.2.6. Training procedure</a></li>
+<li><a href="#orgba86d93">2.2.7. Experiments</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgd31463f">3. Model</a>
+<li><a href="#orge4c5e65">3. Model</a>
 <ul>
-<li><a href="#org7b75ed9">3.1. Word Embedding</a>
+<li><a href="#orge04bf65">3.1. Word Embedding</a>
 <ul>
-<li><a href="#org2f9b9be">3.1.1. Glove.840B.300D</a></li>
-<li><a href="#orgb577cf8">3.1.2. Problem</a></li>
+<li><a href="#orgbd99f26">3.1.1. Glove.840B.300D</a></li>
+<li><a href="#orgc2256da">3.1.2. Problem</a></li>
 </ul>
 </li>
-<li><a href="#org45828d0">3.2. LSTM</a></li>
+<li><a href="#org80da24c">3.2. LSTM</a></li>
 </ul>
 </li>
-<li><a href="#org9a1f72e">4. Data Labeling</a>
+<li><a href="#org47979b1">4. Data Labeling</a>
 <ul>
-<li><a href="#org0c30664">4.1. Dataset</a></li>
-<li><a href="#orge277a5a">4.2. Preprocess</a>
+<li><a href="#org1641414">4.1. Dataset</a></li>
+<li><a href="#org0da378a">4.2. Preprocess</a>
 <ul>
-<li><a href="#org699777b">4.2.1. Kaggle Kaggle Link</a></li>
-<li><a href="#org4503ec1">4.2.2. Pre-label</a></li>
-<li><a href="#orge64eb66">4.2.3. Double check</a></li>
+<li><a href="#orgef802b1">4.2.1. Kaggle Kaggle Link</a></li>
+<li><a href="#orgfe09229">4.2.2. Pre-label</a></li>
+<li><a href="#org72d4997">4.2.3. Double check</a></li>
 </ul>
 </li>
 </ul>
@@ -395,33 +395,33 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org654f8dd" class="outline-2">
-<h2 id="org654f8dd"><span class="section-number-2">1</span> Tasks</h2>
+<div id="outline-container-org23ff74d" class="outline-2">
+<h2 id="org23ff74d"><span class="section-number-2">1</span> Tasks</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org5dc4d3d" class="outline-3">
-<h3 id="org5dc4d3d"><span class="section-number-3">1.1</span> <span class="done DONE">DONE</span> Small labeling(200~)</h3>
+<div id="outline-container-org4eb66db" class="outline-3">
+<h3 id="org4eb66db"><span class="section-number-3">1.1</span> <span class="done DONE">DONE</span> Small labeling(200~)</h3>
 </div>
-<div id="outline-container-org844149b" class="outline-3">
-<h3 id="org844149b"><span class="section-number-3">1.2</span> <span class="done DONE">DONE</span> Literature Review<code>[100%]</code><code>[2/2]</code></h3>
+<div id="outline-container-org91a6a33" class="outline-3">
+<h3 id="org91a6a33"><span class="section-number-3">1.2</span> <span class="done DONE">DONE</span> Literature Review<code>[100%]</code><code>[2/2]</code></h3>
 <div class="outline-text-3" id="text-1-2">
 </div>
-<div id="outline-container-org20cd0b1" class="outline-4">
-<h4 id="org20cd0b1"><span class="section-number-4">1.2.1</span> <span class="done DONE">DONE</span> Neural Architectures for NER(Guillaume)</h4>
+<div id="outline-container-org22bf0c4" class="outline-4">
+<h4 id="org22bf0c4"><span class="section-number-4">1.2.1</span> <span class="done DONE">DONE</span> Neural Architectures for NER(Guillaume)</h4>
 </div>
-<div id="outline-container-orgb0ee7da" class="outline-4">
-<h4 id="orgb0ee7da"><span class="section-number-4">1.2.2</span> <span class="done DONE">DONE</span> Bidirectional LSTM-CRF Models for Sequence Tagging(Baidu research)</h4>
+<div id="outline-container-org2ad3eb5" class="outline-4">
+<h4 id="org2ad3eb5"><span class="section-number-4">1.2.2</span> <span class="done DONE">DONE</span> Bidirectional LSTM-CRF Models for Sequence Tagging(Baidu research)</h4>
 </div>
 </div>
-<div id="outline-container-org7292e42" class="outline-3">
-<h3 id="org7292e42"><span class="section-number-3">1.3</span> <span class="done DONE">DONE</span> WebPage(<a href="https://wonderjeo.github.io/Msc_Project_NER/">Link</a>)</h3>
+<div id="outline-container-org0f1c78a" class="outline-3">
+<h3 id="org0f1c78a"><span class="section-number-3">1.3</span> <span class="done DONE">DONE</span> WebPage(<a href="https://wonderjeo.github.io/Msc_Project_NER/">Link</a>)</h3>
 </div>
-<div id="outline-container-org986473e" class="outline-3">
-<h3 id="org986473e"><span class="section-number-3">1.4</span> <span class="done DONE">DONE</span> Read reference code<code>[100%]</code><code>[3/3]</code></h3>
+<div id="outline-container-org3e8f4c3" class="outline-3">
+<h3 id="org3e8f4c3"><span class="section-number-3">1.4</span> <span class="done DONE">DONE</span> Read reference code<code>[100%]</code><code>[3/3]</code></h3>
 <div class="outline-text-3" id="text-1-4">
 </div>
-<div id="outline-container-org7cb5ed6" class="outline-4">
-<h4 id="org7cb5ed6"><span class="section-number-4">1.4.1</span> <span class="done DONE">DONE</span> Word Embedding(<a href="https://github.com/guillaumegenthial/tf_ner/blob/master/models/lstm_crf/main.py">reference code</a>)</h4>
+<div id="outline-container-org447c887" class="outline-4">
+<h4 id="org447c887"><span class="section-number-4">1.4.1</span> <span class="done DONE">DONE</span> Word Embedding(<a href="https://github.com/guillaumegenthial/tf_ner/blob/master/models/lstm_crf/main.py">reference code</a>)</h4>
 <div class="outline-text-4" id="text-1-4-1">
 <ul class="org-ul">
 <li>use the tensorflow vocabulary lookup table to map token strings to ids</li>
@@ -431,16 +431,16 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
-<div id="outline-container-orgd2522f4" class="outline-4">
-<h4 id="orgd2522f4"><span class="section-number-4">1.4.2</span> <span class="done DONE">DONE</span> lstm(reference code)</h4>
+<div id="outline-container-org78b3f06" class="outline-4">
+<h4 id="org78b3f06"><span class="section-number-4">1.4.2</span> <span class="done DONE">DONE</span> lstm(reference code)</h4>
 <div class="outline-text-4" id="text-1-4-2">
 <ul class="org-ul">
 <li>get the context representation by applying a bi-lstm on top of the token representation</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgebe73f2" class="outline-4">
-<h4 id="orgebe73f2"><span class="section-number-4">1.4.3</span> <span class="done DONE">DONE</span> crf(reference code)</h4>
+<div id="outline-container-orgf095514" class="outline-4">
+<h4 id="orgf095514"><span class="section-number-4">1.4.3</span> <span class="done DONE">DONE</span> crf(reference code)</h4>
 <div class="outline-text-4" id="text-1-4-3">
 <ul class="org-ul">
 <li>decode the sentence using crf</li>
@@ -448,12 +448,12 @@ for the JavaScript code in this tag.
 </div>
 </div>
 </div>
-<div id="outline-container-orgb5ee808" class="outline-3">
-<h3 id="orgb5ee808"><span class="section-number-3">1.5</span> <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF, train dataset:CoNLL2003, test dataset:CoNLL2003)</h3>
+<div id="outline-container-org2695e67" class="outline-3">
+<h3 id="org2695e67"><span class="section-number-3">1.5</span> <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF, train dataset:CoNLL2003, test dataset:CoNLL2003)</h3>
 <div class="outline-text-3" id="text-1-5">
 </div>
-<div id="outline-container-orgc2eab6d" class="outline-4">
-<h4 id="orgc2eab6d"><span class="section-number-4">1.5.1</span> Overview</h4>
+<div id="outline-container-orgbbc3093" class="outline-4">
+<h4 id="orgbbc3093"><span class="section-number-4">1.5.1</span> Overview</h4>
 <div class="outline-text-4" id="text-1-5-1">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -492,8 +492,8 @@ for the JavaScript code in this tag.
 </table>
 </div>
 </div>
-<div id="outline-container-org1656ce9" class="outline-4">
-<h4 id="org1656ce9"><span class="section-number-4">1.5.2</span> Each tag</h4>
+<div id="outline-container-org8022b53" class="outline-4">
+<h4 id="org8022b53"><span class="section-number-4">1.5.2</span> Each tag</h4>
 <div class="outline-text-4" id="text-1-5-2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -548,12 +548,12 @@ for the JavaScript code in this tag.
 </div>
 </div>
 </div>
-<div id="outline-container-org3627792" class="outline-3">
-<h3 id="org3627792"><span class="section-number-3">1.6</span> <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF, train dataset:CoNLL2003, test dataset:Lab-dataset)</h3>
+<div id="outline-container-org55c7b4f" class="outline-3">
+<h3 id="org55c7b4f"><span class="section-number-3">1.6</span> <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF, train dataset:CoNLL2003, test dataset:Lab-dataset)</h3>
 <div class="outline-text-3" id="text-1-6">
 </div>
-<div id="outline-container-orgb8742c3" class="outline-4">
-<h4 id="orgb8742c3"><span class="section-number-4">1.6.1</span> Overview</h4>
+<div id="outline-container-orgbc7f281" class="outline-4">
+<h4 id="orgbc7f281"><span class="section-number-4">1.6.1</span> Overview</h4>
 <div class="outline-text-4" id="text-1-6-1">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -592,8 +592,8 @@ for the JavaScript code in this tag.
 </table>
 </div>
 </div>
-<div id="outline-container-orgca5a084" class="outline-4">
-<h4 id="orgca5a084"><span class="section-number-4">1.6.2</span> Each tag</h4>
+<div id="outline-container-orga7e3497" class="outline-4">
+<h4 id="orga7e3497"><span class="section-number-4">1.6.2</span> Each tag</h4>
 <div class="outline-text-4" id="text-1-6-2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -648,12 +648,12 @@ for the JavaScript code in this tag.
 </div>
 </div>
 </div>
-<div id="outline-container-org33585fa" class="outline-3">
-<h3 id="org33585fa"><span class="section-number-3">1.7</span> <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF-Char-Conv, train dataset:Kaggle dataset, test dataset: Lab-dataset)</h3>
+<div id="outline-container-org0052689" class="outline-3">
+<h3 id="org0052689"><span class="section-number-3">1.7</span> <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF-Char-Conv, train dataset:Kaggle dataset, test dataset: Lab-dataset)</h3>
 <div class="outline-text-3" id="text-1-7">
 </div>
-<div id="outline-container-org6f3ad72" class="outline-4">
-<h4 id="org6f3ad72"><span class="section-number-4">1.7.1</span> Overview</h4>
+<div id="outline-container-org632e0ac" class="outline-4">
+<h4 id="org632e0ac"><span class="section-number-4">1.7.1</span> Overview</h4>
 <div class="outline-text-4" id="text-1-7-1">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -697,8 +697,8 @@ for the JavaScript code in this tag.
 </table>
 </div>
 </div>
-<div id="outline-container-orge60ce8e" class="outline-4">
-<h4 id="orge60ce8e"><span class="section-number-4">1.7.2</span> Each tag</h4>
+<div id="outline-container-orgbd55529" class="outline-4">
+<h4 id="orgbd55529"><span class="section-number-4">1.7.2</span> Each tag</h4>
 <div class="outline-text-4" id="text-1-7-2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -745,8 +745,8 @@ for the JavaScript code in this tag.
 </table>
 </div>
 </div>
-<div id="outline-container-org7e35290" class="outline-4">
-<h4 id="org7e35290"><span class="section-number-4">1.7.3</span> Matrix</h4>
+<div id="outline-container-org52b566a" class="outline-4">
+<h4 id="org52b566a"><span class="section-number-4">1.7.3</span> Matrix</h4>
 <div class="outline-text-4" id="text-1-7-3">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -861,12 +861,12 @@ for the JavaScript code in this tag.
 </div>
 </div>
 </div>
-<div id="outline-container-org9a5ab4c" class="outline-3">
-<h3 id="org9a5ab4c"><span class="section-number-3">1.8</span> <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF-Char-Conv, train datatset:CoNLL2003, test dataset:CoNLL2003)</h3>
+<div id="outline-container-org545c297" class="outline-3">
+<h3 id="org545c297"><span class="section-number-3">1.8</span> <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF-Char-Conv, train datatset:CoNLL2003, test dataset:CoNLL2003)</h3>
 <div class="outline-text-3" id="text-1-8">
 </div>
-<div id="outline-container-orgf1804bb" class="outline-4">
-<h4 id="orgf1804bb"><span class="section-number-4">1.8.1</span> Overview</h4>
+<div id="outline-container-org98f61cc" class="outline-4">
+<h4 id="org98f61cc"><span class="section-number-4">1.8.1</span> Overview</h4>
 <div class="outline-text-4" id="text-1-8-1">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -910,8 +910,8 @@ for the JavaScript code in this tag.
 </table>
 </div>
 </div>
-<div id="outline-container-orgf57a039" class="outline-4">
-<h4 id="orgf57a039"><span class="section-number-4">1.8.2</span> Each tag</h4>
+<div id="outline-container-org668c49f" class="outline-4">
+<h4 id="org668c49f"><span class="section-number-4">1.8.2</span> Each tag</h4>
 <div class="outline-text-4" id="text-1-8-2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -966,12 +966,12 @@ for the JavaScript code in this tag.
 </div>
 </div>
 </div>
-<div id="outline-container-orgf00c5cc" class="outline-3">
-<h3 id="orgf00c5cc"><span class="section-number-3">1.9</span> <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF-Char-Conv, train dataset:Kaggle dataset, test dataset:Kaggle dataset)</h3>
+<div id="outline-container-org0d9fdb5" class="outline-3">
+<h3 id="org0d9fdb5"><span class="section-number-3">1.9</span> <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF-Char-Conv, train dataset:Kaggle dataset, test dataset:Kaggle dataset)</h3>
 <div class="outline-text-3" id="text-1-9">
 </div>
-<div id="outline-container-orgd55e0bf" class="outline-4">
-<h4 id="orgd55e0bf"><span class="section-number-4">1.9.1</span> Overview</h4>
+<div id="outline-container-org450dd56" class="outline-4">
+<h4 id="org450dd56"><span class="section-number-4">1.9.1</span> Overview</h4>
 <div class="outline-text-4" id="text-1-9-1">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1015,8 +1015,8 @@ for the JavaScript code in this tag.
 </table>
 </div>
 </div>
-<div id="outline-container-org9dfcb74" class="outline-4">
-<h4 id="org9dfcb74"><span class="section-number-4">1.9.2</span> Each tag</h4>
+<div id="outline-container-org4dea0db" class="outline-4">
+<h4 id="org4dea0db"><span class="section-number-4">1.9.2</span> Each tag</h4>
 <div class="outline-text-4" id="text-1-9-2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1071,12 +1071,12 @@ for the JavaScript code in this tag.
 </div>
 </div>
 </div>
-<div id="outline-container-orgdae926d" class="outline-3">
-<h3 id="orgdae926d"><span class="section-number-3">1.10</span> <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF-Char-Conv, train dataset:Lab-dataset(1000), test dataset:Lab-dataset(400))</h3>
+<div id="outline-container-org9de6ef8" class="outline-3">
+<h3 id="org9de6ef8"><span class="section-number-3">1.10</span> <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF-Char-Conv, train dataset:Lab-dataset(1000), test dataset:Lab-dataset(400))</h3>
 <div class="outline-text-3" id="text-1-10">
 </div>
-<div id="outline-container-org04a3a87" class="outline-4">
-<h4 id="org04a3a87"><span class="section-number-4">1.10.1</span> Overview</h4>
+<div id="outline-container-orgd313748" class="outline-4">
+<h4 id="orgd313748"><span class="section-number-4">1.10.1</span> Overview</h4>
 <div class="outline-text-4" id="text-1-10-1">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1120,8 +1120,8 @@ for the JavaScript code in this tag.
 </table>
 </div>
 </div>
-<div id="outline-container-org9972b08" class="outline-4">
-<h4 id="org9972b08"><span class="section-number-4">1.10.2</span> Each tag</h4>
+<div id="outline-container-orga42daaf" class="outline-4">
+<h4 id="orga42daaf"><span class="section-number-4">1.10.2</span> Each tag</h4>
 <div class="outline-text-4" id="text-1-10-2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1169,12 +1169,12 @@ for the JavaScript code in this tag.
 </div>
 </div>
 </div>
-<div id="outline-container-org46b0e78" class="outline-3">
-<h3 id="org46b0e78"><span class="section-number-3">1.11</span> <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF-Char-Conv, train dataset:Kaggle dataset(10000)+Lab-dataset(1000), test dataset:Lab-dataset(400))</h3>
+<div id="outline-container-org5b92356" class="outline-3">
+<h3 id="org5b92356"><span class="section-number-3">1.11</span> <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF-Char-Conv, train dataset:Kaggle dataset(10000)+Lab-dataset(1000), test dataset:Lab-dataset(400))</h3>
 <div class="outline-text-3" id="text-1-11">
 </div>
-<div id="outline-container-orgccebe8a" class="outline-4">
-<h4 id="orgccebe8a"><span class="section-number-4">1.11.1</span> Each tag</h4>
+<div id="outline-container-org6039bfb" class="outline-4">
+<h4 id="org6039bfb"><span class="section-number-4">1.11.1</span> Each tag</h4>
 <div class="outline-text-4" id="text-1-11-1">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1216,12 +1216,12 @@ for the JavaScript code in this tag.
 </div>
 </div>
 </div>
-<div id="outline-container-orgee1f701" class="outline-3">
-<h3 id="orgee1f701"><span class="section-number-3">1.12</span> <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF-Char-Conv, train dataset:Kaggle dataset(40000)+Lab-dataset(1000), test dataset:Lab-dataset(400))</h3>
+<div id="outline-container-org1f7a6ab" class="outline-3">
+<h3 id="org1f7a6ab"><span class="section-number-3">1.12</span> <span class="done DONE">DONE</span> Model Evaluation(model:LSTM-CRF-Char-Conv, train dataset:Kaggle dataset(40000)+Lab-dataset(1000), test dataset:Lab-dataset(400))</h3>
 <div class="outline-text-3" id="text-1-12">
 </div>
-<div id="outline-container-org0648cae" class="outline-4">
-<h4 id="org0648cae"><span class="section-number-4">1.12.1</span> Overview</h4>
+<div id="outline-container-org8eec258" class="outline-4">
+<h4 id="org8eec258"><span class="section-number-4">1.12.1</span> Overview</h4>
 <div class="outline-text-4" id="text-1-12-1">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1265,8 +1265,8 @@ for the JavaScript code in this tag.
 </table>
 </div>
 </div>
-<div id="outline-container-orgc43b251" class="outline-4">
-<h4 id="orgc43b251"><span class="section-number-4">1.12.2</span> Each tag</h4>
+<div id="outline-container-org0d015bf" class="outline-4">
+<h4 id="org0d015bf"><span class="section-number-4">1.12.2</span> Each tag</h4>
 <div class="outline-text-4" id="text-1-12-2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1307,8 +1307,8 @@ for the JavaScript code in this tag.
 </table>
 </div>
 </div>
-<div id="outline-container-org2c27d44" class="outline-4">
-<h4 id="org2c27d44"><span class="section-number-4">1.12.3</span> Matrix</h4>
+<div id="outline-container-org7e330d3" class="outline-4">
+<h4 id="org7e330d3"><span class="section-number-4">1.12.3</span> Matrix</h4>
 <div class="outline-text-4" id="text-1-12-3">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1369,12 +1369,12 @@ for the JavaScript code in this tag.
 </div>
 </div>
 </div>
-<div id="outline-container-orgac23fd9" class="outline-3">
-<h3 id="orgac23fd9"><span class="section-number-3">1.13</span> <span class="todo TODO">TODO</span> Labeling<code>[0%]</code><code>[0/3]</code></h3>
+<div id="outline-container-org10d83a1" class="outline-3">
+<h3 id="org10d83a1"><span class="section-number-3">1.13</span> <span class="todo TODO">TODO</span> Labeling<code>[0%]</code><code>[0/3]</code></h3>
 <div class="outline-text-3" id="text-1-13">
 </div>
-<div id="outline-container-orge542387" class="outline-4">
-<h4 id="orge542387"><span class="section-number-4">1.13.1</span> tagging shemes</h4>
+<div id="outline-container-org390b3ae" class="outline-4">
+<h4 id="org390b3ae"><span class="section-number-4">1.13.1</span> tagging shemes</h4>
 <div class="outline-text-4" id="text-1-13-1">
 <ul class="org-ul">
 <li>tag types?
@@ -1389,63 +1389,63 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
-<div id="outline-container-org1fce445" class="outline-4">
-<h4 id="org1fce445"><span class="section-number-4">1.13.2</span> <span class="todo TODO">TODO</span> Wang's part<code>[14%]</code><code>[1/7]</code></h4>
+<div id="outline-container-org593cb29" class="outline-4">
+<h4 id="org593cb29"><span class="section-number-4">1.13.2</span> <span class="todo TODO">TODO</span> Wang's part<code>[14%]</code><code>[1/7]</code></h4>
 <div class="outline-text-4" id="text-1-13-2">
 </div>
 <ol class="org-ol">
-<li><a id="orgc5e0510"></a><span class="done DONE">DONE</span> 1-1000<br /></li>
-<li><a id="org51aa107"></a><span class="todo TODO">TODO</span> 1001-2000<br /></li>
-<li><a id="org9288e05"></a><span class="todo TODO">TODO</span> 2001-3000<br /></li>
-<li><a id="org18e8d6e"></a><span class="todo TODO">TODO</span> 3001-4000<br /></li>
-<li><a id="orga376347"></a><span class="todo TODO">TODO</span> 4001-5000<br /></li>
-<li><a id="org665f21f"></a><span class="todo TODO">TODO</span> 5001-6000<br /></li>
-<li><a id="org568c9ac"></a><span class="todo TODO">TODO</span> 6001-7000<br /></li>
+<li><a id="orgce95378"></a><span class="done DONE">DONE</span> 1-1000<br /></li>
+<li><a id="orgcac73de"></a><span class="todo TODO">TODO</span> 1001-2000<br /></li>
+<li><a id="orge482a96"></a><span class="todo TODO">TODO</span> 2001-3000<br /></li>
+<li><a id="org82b9917"></a><span class="todo TODO">TODO</span> 3001-4000<br /></li>
+<li><a id="org41f4407"></a><span class="todo TODO">TODO</span> 4001-5000<br /></li>
+<li><a id="orgd08c9b3"></a><span class="todo TODO">TODO</span> 5001-6000<br /></li>
+<li><a id="org19b07dd"></a><span class="todo TODO">TODO</span> 6001-7000<br /></li>
 </ol>
 </div>
-<div id="outline-container-orgda7434b" class="outline-4">
-<h4 id="orgda7434b"><span class="section-number-4">1.13.3</span> <span class="todo TODO">TODO</span> Liu's part<code>[14%]</code><code>[1/7]</code></h4>
+<div id="outline-container-orge2277bf" class="outline-4">
+<h4 id="orge2277bf"><span class="section-number-4">1.13.3</span> <span class="todo TODO">TODO</span> Liu's part<code>[28%]</code><code>[2/7]</code></h4>
 <div class="outline-text-4" id="text-1-13-3">
 </div>
 <ol class="org-ol">
-<li><a id="org7dfa66e"></a><span class="done DONE">DONE</span> 7001-8000<br /></li>
-<li><a id="org97054aa"></a><span class="todo TODO">TODO</span> 8001-9000<br /></li>
-<li><a id="orge7adfa2"></a><span class="todo TODO">TODO</span> 9001-10000<br /></li>
-<li><a id="orga3b571d"></a><span class="todo TODO">TODO</span> 10001-11000<br /></li>
-<li><a id="org908a925"></a><span class="todo TODO">TODO</span> 11001-12000<br /></li>
-<li><a id="orgbc7a9b1"></a><span class="todo TODO">TODO</span> 12001-13000<br /></li>
-<li><a id="org3f7b835"></a><span class="todo TODO">TODO</span> 13001-14000<br /></li>
+<li><a id="org6c6d65c"></a><span class="done DONE">DONE</span> 7001-8000<br /></li>
+<li><a id="org45aded6"></a><span class="done DONE">DONE</span> 8001-9000<br /></li>
+<li><a id="orgddff734"></a><span class="todo TODO">TODO</span> 9001-10000<br /></li>
+<li><a id="orgb2bb445"></a><span class="todo TODO">TODO</span> 10001-11000<br /></li>
+<li><a id="org84c0f31"></a><span class="todo TODO">TODO</span> 11001-12000<br /></li>
+<li><a id="org1a8815f"></a><span class="todo TODO">TODO</span> 12001-13000<br /></li>
+<li><a id="org352501e"></a><span class="todo TODO">TODO</span> 13001-14000<br /></li>
 </ol>
 </div>
-<div id="outline-container-orgb8b77cd" class="outline-4">
-<h4 id="orgb8b77cd"><span class="section-number-4">1.13.4</span> <span class="todo TODO">TODO</span> Wei's part<code>[0%]</code><code>[0/7]</code></h4>
+<div id="outline-container-org8e42110" class="outline-4">
+<h4 id="org8e42110"><span class="section-number-4">1.13.4</span> <span class="todo TODO">TODO</span> Wei's part<code>[0%]</code><code>[0/7]</code></h4>
 <div class="outline-text-4" id="text-1-13-4">
 </div>
 <ol class="org-ol">
-<li><a id="orgb978fef"></a><span class="todo TODO">TODO</span> 14001-15000<br /></li>
-<li><a id="org0f16883"></a><span class="todo TODO">TODO</span> 15001-16000<br /></li>
-<li><a id="org1e8e5dc"></a><span class="todo TODO">TODO</span> 16001-17000<br /></li>
-<li><a id="org799f86f"></a><span class="todo TODO">TODO</span> 17001-18000<br /></li>
-<li><a id="orgbafbdb9"></a><span class="todo TODO">TODO</span> 18001-19000<br /></li>
-<li><a id="org5f8b1da"></a><span class="todo TODO">TODO</span> 19001-20000<br /></li>
-<li><a id="orgff5319c"></a><span class="todo TODO">TODO</span> 20001-21380<br /></li>
+<li><a id="org412f852"></a><span class="todo TODO">TODO</span> 14001-15000<br /></li>
+<li><a id="orgceef5c9"></a><span class="todo TODO">TODO</span> 15001-16000<br /></li>
+<li><a id="org91962d6"></a><span class="todo TODO">TODO</span> 16001-17000<br /></li>
+<li><a id="orgf15f6b7"></a><span class="todo TODO">TODO</span> 17001-18000<br /></li>
+<li><a id="org45cb5c6"></a><span class="todo TODO">TODO</span> 18001-19000<br /></li>
+<li><a id="org621b80f"></a><span class="todo TODO">TODO</span> 19001-20000<br /></li>
+<li><a id="org76ac76d"></a><span class="todo TODO">TODO</span> 20001-21380<br /></li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org7d6412e" class="outline-3">
-<h3 id="org7d6412e"><span class="section-number-3">1.14</span> <span class="todo TODO">TODO</span> Revise the existing model(bi-lstm+crf)<code>[0%]</code><code>[0/2]</code></h3>
+<div id="outline-container-org8d21be0" class="outline-3">
+<h3 id="org8d21be0"><span class="section-number-3">1.14</span> <span class="todo TODO">TODO</span> Revise the existing model(bi-lstm+crf)<code>[0%]</code><code>[0/2]</code></h3>
 <div class="outline-text-3" id="text-1-14">
 </div>
-<div id="outline-container-orgadf0cf1" class="outline-4">
-<h4 id="orgadf0cf1"><span class="section-number-4">1.14.1</span> <span class="todo TODO">TODO</span> Word embedding</h4>
+<div id="outline-container-orgff9ddf2" class="outline-4">
+<h4 id="orgff9ddf2"><span class="section-number-4">1.14.1</span> <span class="todo TODO">TODO</span> Word embedding</h4>
 <div class="outline-text-4" id="text-1-14-1">
 <ul class="org-ul">
 <li>reference code use glove as word embedding, we can try other word embedding way to improve</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org9563375" class="outline-4">
-<h4 id="org9563375"><span class="section-number-4">1.14.2</span> <span class="todo TODO">TODO</span> Model architecture</h4>
+<div id="outline-container-org8be378d" class="outline-4">
+<h4 id="org8be378d"><span class="section-number-4">1.14.2</span> <span class="todo TODO">TODO</span> Model architecture</h4>
 <div class="outline-text-4" id="text-1-14-2">
 <ul class="org-ul">
 <li>adjust the lstm and crf architecture</li>
@@ -1454,24 +1454,24 @@ for the JavaScript code in this tag.
 </div>
 </div>
 </div>
-<div id="outline-container-orgca57b42" class="outline-3">
-<h3 id="orgca57b42"><span class="section-number-3">1.15</span> <span class="todo TODO">TODO</span> Model evaluation</h3>
+<div id="outline-container-orgc6de409" class="outline-3">
+<h3 id="orgc6de409"><span class="section-number-3">1.15</span> <span class="todo TODO">TODO</span> Model evaluation</h3>
 <div class="outline-text-3" id="text-1-15">
 <ul class="org-ul">
 <li>we used to plan to compare the accuracy of stanford corenlp and the accuracy of our model. however, we found that stanford corenlp is too complex, and it's better to compare with other models(like lstm+crf, lstm, and so on)</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org87cfe79" class="outline-3">
-<h3 id="org87cfe79"><span class="section-number-3">1.16</span> <span class="todo TODO">TODO</span> Rare word recognition</h3>
+<div id="outline-container-orgf658f4c" class="outline-3">
+<h3 id="orgf658f4c"><span class="section-number-3">1.16</span> <span class="todo TODO">TODO</span> Rare word recognition</h3>
 <div class="outline-text-3" id="text-1-16">
 <ul class="org-ul">
 <li>by word frequency</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgf0d11b1" class="outline-3">
-<h3 id="orgf0d11b1"><span class="section-number-3">1.17</span> <span class="todo TODO">TODO</span> Presentation type?</h3>
+<div id="outline-container-orgf1fcd73" class="outline-3">
+<h3 id="orgf1fcd73"><span class="section-number-3">1.17</span> <span class="todo TODO">TODO</span> Presentation type?</h3>
 <div class="outline-text-3" id="text-1-17">
 <ul class="org-ul">
 <li>is it necessary to build a website or application to show the ner result? as this site: <a href="https://github.com/guillaumegenthial/tf_ner">ner site</a></li>
@@ -1479,16 +1479,16 @@ for the JavaScript code in this tag.
 </div>
 </div>
 </div>
-<div id="outline-container-org1689312" class="outline-2">
-<h2 id="org1689312"><span class="section-number-2">2</span> Literature Review</h2>
+<div id="outline-container-org45af994" class="outline-2">
+<h2 id="org45af994"><span class="section-number-2">2</span> Literature Review</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org85f2bc2" class="outline-3">
-<h3 id="org85f2bc2"><span class="section-number-3">2.1</span> Neural Architectures for NER(Guillaume)</h3>
+<div id="outline-container-orgf190196" class="outline-3">
+<h3 id="orgf190196"><span class="section-number-3">2.1</span> Neural Architectures for NER(Guillaume)</h3>
 <div class="outline-text-3" id="text-2-1">
 </div>
-<div id="outline-container-orgbc88f9c" class="outline-4">
-<h4 id="orgbc88f9c"><span class="section-number-4">2.1.1</span> Model</h4>
+<div id="outline-container-orga0f480d" class="outline-4">
+<h4 id="orga0f480d"><span class="section-number-4">2.1.1</span> Model</h4>
 <div class="outline-text-4" id="text-2-1-1">
 <ul class="org-ul">
 <li>bidirectional LSTMs and CRF(*better)</li>
@@ -1502,8 +1502,8 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
-<div id="outline-container-org1368a6b" class="outline-4">
-<h4 id="org1368a6b"><span class="section-number-4">2.1.2</span> LSTM</h4>
+<div id="outline-container-org7063284" class="outline-4">
+<h4 id="org7063284"><span class="section-number-4">2.1.2</span> LSTM</h4>
 <div class="outline-text-4" id="text-2-1-2">
 <ul class="org-ul">
 <li>input: a given sentence (\(x_1, x_2, ..., x_n\))</li>
@@ -1515,8 +1515,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgc68a5d9" class="outline-4">
-<h4 id="orgc68a5d9"><span class="section-number-4">2.1.3</span> CRF</h4>
+<div id="outline-container-orgf0dc5d5" class="outline-4">
+<h4 id="orgf0dc5d5"><span class="section-number-4">2.1.3</span> CRF</h4>
 <div class="outline-text-4" id="text-2-1-3">
 <ul class="org-ul">
 <li>the grammer that characterizes interpretable sequences of tags imposes several hard constraints(e.g., I-PER cannot follow B-LOC) that would be impossible to model with independence assumptions.</li>
@@ -1552,8 +1552,8 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </div>
 </div>
 
-<div id="outline-container-org5ac905a" class="outline-4">
-<h4 id="org5ac905a"><span class="section-number-4">2.1.4</span> Parameterization and Training</h4>
+<div id="outline-container-org47979a5" class="outline-4">
+<h4 id="org47979a5"><span class="section-number-4">2.1.4</span> Parameterization and Training</h4>
 <div class="outline-text-4" id="text-2-1-4">
 <ul class="org-ul">
 <li>the scores associated with each tagging decision for each token (i.e., the \(P_(i,y)\)'s) are defined to be the dot product between the embedding of a word-in-context computed with a bidirectional LSTM</li>
@@ -1565,8 +1565,8 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </div>
 </div>
 
-<div id="outline-container-org06ad891" class="outline-4">
-<h4 id="org06ad891"><span class="section-number-4">2.1.5</span> Tagging Schemes</h4>
+<div id="outline-container-org4e25c11" class="outline-4">
+<h4 id="org4e25c11"><span class="section-number-4">2.1.5</span> Tagging Schemes</h4>
 <div class="outline-text-4" id="text-2-1-5">
 <ul class="org-ul">
 <li>the paper use IOBES tagging scheme, because tagging a word as I-label with high-confidence narrows down the choices for the subsequent word to I-label or E-label</li>
@@ -1575,8 +1575,8 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </div>
 </div>
 
-<div id="outline-container-orgc5fcff4" class="outline-4">
-<h4 id="orgc5fcff4"><span class="section-number-4">2.1.6</span> Input Word Embeddings</h4>
+<div id="outline-container-orgb6e253f" class="outline-4">
+<h4 id="orgb6e253f"><span class="section-number-4">2.1.6</span> Input Word Embeddings</h4>
 <div class="outline-text-4" id="text-2-1-6">
 <ul class="org-ul">
 <li>the input layers are vector representations of individual words</li>
@@ -1600,19 +1600,19 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </ul>
 </div>
 </div>
-<div id="outline-container-orgc51ba21" class="outline-4">
-<h4 id="orgc51ba21"><span class="section-number-4">2.1.7</span> Experiments</h4>
+<div id="outline-container-orgffc3e55" class="outline-4">
+<h4 id="orgffc3e55"><span class="section-number-4">2.1.7</span> Experiments</h4>
 <div class="outline-text-4" id="text-2-1-7">
 <hr />
 </div>
 </div>
 </div>
-<div id="outline-container-org13fd964" class="outline-3">
-<h3 id="org13fd964"><span class="section-number-3">2.2</span> Bidirectional LSTM-CRF Models for Sequence Tagging(Baidu research)</h3>
+<div id="outline-container-org316b260" class="outline-3">
+<h3 id="org316b260"><span class="section-number-3">2.2</span> Bidirectional LSTM-CRF Models for Sequence Tagging(Baidu research)</h3>
 <div class="outline-text-3" id="text-2-2">
 </div>
-<div id="outline-container-org8323438" class="outline-4">
-<h4 id="org8323438"><span class="section-number-4">2.2.1</span> Model</h4>
+<div id="outline-container-org2f3b69a" class="outline-4">
+<h4 id="org2f3b69a"><span class="section-number-4">2.2.1</span> Model</h4>
 <div class="outline-text-4" id="text-2-2-1">
 <ul class="org-ul">
 <li>LSTM</li>
@@ -1622,8 +1622,8 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </ul>
 </div>
 </div>
-<div id="outline-container-org6fb1a51" class="outline-4">
-<h4 id="org6fb1a51"><span class="section-number-4">2.2.2</span> LSTM</h4>
+<div id="outline-container-orgd82205d" class="outline-4">
+<h4 id="orgd82205d"><span class="section-number-4">2.2.2</span> LSTM</h4>
 <div class="outline-text-4" id="text-2-2-2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -1669,8 +1669,8 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </div>
 </div>
 
-<div id="outline-container-org39a228d" class="outline-4">
-<h4 id="org39a228d"><span class="section-number-4">2.2.3</span> Bidirectional LSTM Networks</h4>
+<div id="outline-container-orgbfa2e70" class="outline-4">
+<h4 id="orgbfa2e70"><span class="section-number-4">2.2.3</span> Bidirectional LSTM Networks</h4>
 <div class="outline-text-4" id="text-2-2-3">
 <ul class="org-ul">
 <li>using a bidirectional LSTM network can effiently make use of past features and future features for specific time frame</li>
@@ -1679,8 +1679,8 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </div>
 </div>
 
-<div id="outline-container-org34b36e0" class="outline-4">
-<h4 id="org34b36e0"><span class="section-number-4">2.2.4</span> CRF Networks</h4>
+<div id="outline-container-orgec38783" class="outline-4">
+<h4 id="orgec38783"><span class="section-number-4">2.2.4</span> CRF Networks</h4>
 <div class="outline-text-4" id="text-2-2-4">
 <ul class="org-ul">
 <li>there are 2 ways to make use of neighbor tag information in predicting current tags
@@ -1693,8 +1693,8 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </div>
 </div>
 
-<div id="outline-container-org2bd24fb" class="outline-4">
-<h4 id="org2bd24fb"><span class="section-number-4">2.2.5</span> LSTM-CRF Networks</h4>
+<div id="outline-container-orgd4b95d7" class="outline-4">
+<h4 id="orgd4b95d7"><span class="section-number-4">2.2.5</span> LSTM-CRF Networks</h4>
 <div class="outline-text-4" id="text-2-2-5">
 <ul class="org-ul">
 <li>the network can efficiently use past input features via a LSTM layer and sentence level tag information via a CRF layer</li>
@@ -1704,8 +1704,8 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </div>
 </div>
 
-<div id="outline-container-orgef65c47" class="outline-4">
-<h4 id="orgef65c47"><span class="section-number-4">2.2.6</span> Training procedure</h4>
+<div id="outline-container-org423e676" class="outline-4">
+<h4 id="org423e676"><span class="section-number-4">2.2.6</span> Training procedure</h4>
 <div class="outline-text-4" id="text-2-2-6">
 <ul class="org-ul">
 <li>in each epoch, divide the whole training data to batches and process one batch at a time</li>
@@ -1754,8 +1754,8 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </div>
 </div>
 
-<div id="outline-container-orgeb5235b" class="outline-4">
-<h4 id="orgeb5235b"><span class="section-number-4">2.2.7</span> Experiments</h4>
+<div id="outline-container-orgba86d93" class="outline-4">
+<h4 id="orgba86d93"><span class="section-number-4">2.2.7</span> Experiments</h4>
 <div class="outline-text-4" id="text-2-2-7">
 <ul class="org-ul">
 <li>Word embedding
@@ -1767,16 +1767,16 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </div>
 </div>
 </div>
-<div id="outline-container-orgd31463f" class="outline-2">
-<h2 id="orgd31463f"><span class="section-number-2">3</span> Model</h2>
+<div id="outline-container-orge4c5e65" class="outline-2">
+<h2 id="orge4c5e65"><span class="section-number-2">3</span> Model</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-org7b75ed9" class="outline-3">
-<h3 id="org7b75ed9"><span class="section-number-3">3.1</span> Word Embedding</h3>
+<div id="outline-container-orge04bf65" class="outline-3">
+<h3 id="orge04bf65"><span class="section-number-3">3.1</span> Word Embedding</h3>
 <div class="outline-text-3" id="text-3-1">
 </div>
-<div id="outline-container-org2f9b9be" class="outline-4">
-<h4 id="org2f9b9be"><span class="section-number-4">3.1.1</span> Glove.840B.300D</h4>
+<div id="outline-container-orgbd99f26" class="outline-4">
+<h4 id="orgbd99f26"><span class="section-number-4">3.1.1</span> Glove.840B.300D</h4>
 <div class="outline-text-4" id="text-3-1-1">
 <ul class="org-ul">
 <li><a href="https://nlp.stanford.edu/projects/glove/">GloVe</a> is an unsupervised learning algorithm for obtaining vector representations for words. We extract all words from the training set and assign the GloVe'embedding to each of them, then store the result as glove.npz
@@ -1787,8 +1787,8 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </ul>
 </div>
 </div>
-<div id="outline-container-orgb577cf8" class="outline-4">
-<h4 id="orgb577cf8"><span class="section-number-4">3.1.2</span> Problem</h4>
+<div id="outline-container-orgc2256da" class="outline-4">
+<h4 id="orgc2256da"><span class="section-number-4">3.1.2</span> Problem</h4>
 <div class="outline-text-4" id="text-3-1-2">
 <ul class="org-ul">
 <li>initial matrix is zero-matrix now. If the GloVe corpus doesn't contain these words, these words will have a same representation</li>
@@ -1797,16 +1797,16 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </div>
 </div>
 
-<div id="outline-container-org45828d0" class="outline-3">
-<h3 id="org45828d0"><span class="section-number-3">3.2</span> LSTM</h3>
+<div id="outline-container-org80da24c" class="outline-3">
+<h3 id="org80da24c"><span class="section-number-3">3.2</span> LSTM</h3>
 </div>
 </div>
-<div id="outline-container-org9a1f72e" class="outline-2">
-<h2 id="org9a1f72e"><span class="section-number-2">4</span> Data Labeling</h2>
+<div id="outline-container-org47979b1" class="outline-2">
+<h2 id="org47979b1"><span class="section-number-2">4</span> Data Labeling</h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-org0c30664" class="outline-3">
-<h3 id="org0c30664"><span class="section-number-3">4.1</span> Dataset</h3>
+<div id="outline-container-org1641414" class="outline-3">
+<h3 id="org1641414"><span class="section-number-3">4.1</span> Dataset</h3>
 <div class="outline-text-3" id="text-4-1">
 <ul class="org-ul">
 <li><a href="https://github.com/synalp/NER/tree/master/corpus/CoNLL-2003">CoNLL2003, 219,553 lines</a></li>
@@ -1815,12 +1815,12 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </ul>
 </div>
 </div>
-<div id="outline-container-orge277a5a" class="outline-3">
-<h3 id="orge277a5a"><span class="section-number-3">4.2</span> Preprocess</h3>
+<div id="outline-container-org0da378a" class="outline-3">
+<h3 id="org0da378a"><span class="section-number-3">4.2</span> Preprocess</h3>
 <div class="outline-text-3" id="text-4-2">
 </div>
-<div id="outline-container-org699777b" class="outline-4">
-<h4 id="org699777b"><span class="section-number-4">4.2.1</span> Kaggle <a href="https://www.kaggle.com/abhinavwalia95/entity-annotated-corpus">Kaggle Link</a></h4>
+<div id="outline-container-orgef802b1" class="outline-4">
+<h4 id="orgef802b1"><span class="section-number-4">4.2.1</span> Kaggle <a href="https://www.kaggle.com/abhinavwalia95/entity-annotated-corpus">Kaggle Link</a></h4>
 <div class="outline-text-4" id="text-4-2-1">
 <ul class="org-ul">
 <li>find ".,O", replace it with ".aaaaaa,Oaaaaaa"(Notepad)</li>
@@ -1835,8 +1835,8 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </ul>
 </div>
 </div>
-<div id="outline-container-org4503ec1" class="outline-4">
-<h4 id="org4503ec1"><span class="section-number-4">4.2.2</span> Pre-label</h4>
+<div id="outline-container-orgfe09229" class="outline-4">
+<h4 id="orgfe09229"><span class="section-number-4">4.2.2</span> Pre-label</h4>
 <div class="outline-text-4" id="text-4-2-2">
 <ul class="org-ul">
 <li>use model to pre-label the lab-dataset</li>
@@ -1846,8 +1846,8 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </ul>
 </div>
 </div>
-<div id="outline-container-orge64eb66" class="outline-4">
-<h4 id="orge64eb66"><span class="section-number-4">4.2.3</span> Double check</h4>
+<div id="outline-container-org72d4997" class="outline-4">
+<h4 id="org72d4997"><span class="section-number-4">4.2.3</span> Double check</h4>
 <div class="outline-text-4" id="text-4-2-3">
 <ul class="org-ul">
 <li>Don't label "the"</li>
@@ -1862,7 +1862,7 @@ p(y|X) = \frac{e^{s(X,y)}}{\sum_{\widetilde{y}\in{Y_X}}e^{s(X,\widetilde{y})}}
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Wang Dezhao, Liu Wenjing, Wei Jian</p>
-<p class="date">Created: 2019-06-16 Sun 13:57</p>
+<p class="date">Created: 2019-06-24 Mon 13:52</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
